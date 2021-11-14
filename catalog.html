@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title> Catalog </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style_catalog.css">
+    
+    </head>
+    <body>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h1 style="font-size:50px"> CATALOG</h1>
+
+        <div class="slideshow.container">
+            <div class="mySlides fade">
+                <img src="poza.PNG" style = "width: 20%;">
+                <div class="linkPag"><a href="index.html">Radut Radu Cristian </a></div>
+            </div>
+        </div>
+
+        <div class="slideshow.container">
+            <div class="mySlides fade">
+                <img src="radu.PNG" style = "width: 30%;">
+                <div class="linkPag"><a href="2.html">Simea Radu-Stefan </a></div>
+            </div>
+        </div>
+
+        <div class="slideshow.container">
+            <div class="mySlides fade">
+                <img src="andrei.PNG" style = "width: 30%;">
+                <div class="linkPag"><a href="1.html">Perseca Andrei-Cosmin</a></div>
+            </div>
+        </div>
+
+    </div>>
+    
+    <script>
+        var slideIndex=0;
+showSlidesColegi();
+
+function showSlidesColegi(){
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+      for (i=0;i < slides.length; i++){
+        slides[i].style.display="none";
+      }
+     slideIndex++;
+if (slideIndex > slides.length) {slideIndex=1}
+
+slides[slideIndex-1].style.display="block";
+
+setTimeout(showSlidesColegi, 3000);   //change image every 3 seconds
+}
+    </script>
+
+
+    </body>
+</html>
